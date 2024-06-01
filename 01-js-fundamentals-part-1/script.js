@@ -129,21 +129,50 @@ console.log(now - 1991 > now - 2018); */
 // multiple
 // lines`);
 
-const age = 15;
+// const age = 15;
 
-if (age >= 18) {
-  console.log('Sarah can start her driving license 🚗');
-} else {
-  const yearsLeft = 18 - age;
-  console.log(`Sarah is too young. Wait another ${yearsLeft} years :)`);
-}
+// if (age >= 18) {
+//   console.log('Sarah can start her driving license 🚗');
+// } else {
+//   const yearsLeft = 18 - age;
+//   console.log(`Sarah is too young. Wait another ${yearsLeft} years :)`);
+// }
 
-const birthYear = 2012;
-let century;
+// const birthYear = 2012;
+// let century;
 
-if (birthYear <= 2000) {
-  century = 20;
-} else {
-  century = 21;
-}
-console.log(century);
+// if (birthYear <= 2000) {
+//   century = 20;
+// } else {
+//   century = 21;
+// }
+// console.log(century);
+
+// Type Conversion and Coercion
+
+// Type Conversion
+const inputYear = '1991';
+console.log(Number(inputYear), inputYear); // 1991, '1991'
+console.log(Number(inputYear) + 18); // 2009
+
+console.log(Number('Jonas')); // NaN
+console.log(typeof NaN); // number
+
+console.log(String(23), 23); // '23', 23
+
+// Type Coercion
+console.log('I am ' + 23 + ' years old'); // 'I am 23 years old'
+console.log('23' - '10' - 3); // 10
+console.log('23' + '10' + 3); // 23103
+console.log('23' * '2'); // 46
+console.log('23' / '2'); // 11.5
+
+let n = '1' + 1; // concatenates number with string; n = '11'
+n = n - 1; // n = '11' - 1
+console.log(n); // n = 10
+
+let j = 2 + 3 + 4 + '5';
+console.log(j); // j = '95'
+
+let k = '10' - '4' - '3' - 2 + '5';
+console.log(k); // k = '15'
