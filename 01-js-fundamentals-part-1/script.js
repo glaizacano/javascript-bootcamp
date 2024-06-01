@@ -105,26 +105,45 @@ console.log(now - 1991 > now - 2018); */
 // const averageAge = (ageJonas + ageJonas) / 2;
 // console.log(ageJonas, ageSarah, averageAge);
 
-const firstName = 'Jonas';
-const job = 'teacher';
-const birthYear = 1991;
-const year = 2037;
+// const firstName = 'Jonas';
+// const job = 'teacher';
+// const birthYear = 1991;
+// const year = 2037;
 
-// String concatenation
-const jonas =
-  "I'm " + firstName + ', a ' + (year - birthYear) + '-year-old ' + job + '!';
-console.log(jonas);
+// // String concatenation
+// const jonas =
+//   "I'm " + firstName + ', a ' + (year - birthYear) + '-year-old ' + job + '!';
+// console.log(jonas);
 
-// Template strings
-const jonasNew = `I'm ${firstName}, a ${year - birthYear}-year-old ${job}!`;
-console.log(jonasNew);
+// // Template strings
+// const jonasNew = `I'm ${firstName}, a ${year - birthYear}-year-old ${job}!`;
+// console.log(jonasNew);
 
-console.log(`Just a regular string...`);
+// console.log(`Just a regular string...`);
 
-console.log(`String with \n\
-multiple \n\
-lines`);
+// console.log(`String with \n\
+// multiple \n\
+// lines`);
 
-console.log(`String
-multiple
-lines`);
+// console.log(`String
+// multiple
+// lines`);
+
+const age = 15;
+
+if (age >= 18) {
+  console.log('Sarah can start her driving license 🚗');
+} else {
+  const yearsLeft = 18 - age;
+  console.log(`Sarah is too young. Wait another ${yearsLeft} years :)`);
+}
+
+const birthYear = 2012;
+let century;
+
+if (birthYear <= 2000) {
+  century = 20;
+} else {
+  century = 21;
+}
+console.log(century);
