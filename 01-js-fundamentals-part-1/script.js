@@ -86,21 +86,45 @@ console.log(ageSarah >= 18);
 const isFullAge = ageSarah >= 18;
 console.log(now - 1991 > now - 2018); */
 
-const now = 2037;
-const ageJonas = now - 1991;
-const ageSarah = now - 2018;
-console.log(ageJonas, ageSarah);
+// const now = 2037;
+// const ageJonas = now - 1991;
+// const ageSarah = now - 2018;
+// console.log(ageJonas, ageSarah);
 
-console.log(now - 1991 > now - 2018);
+// console.log(now - 1991 > now - 2018);
 
-// console.log(25 - 10 - 5);
+// // console.log(25 - 10 - 5);
 
-let x, y;
-x = y = 25 - 10 - 5; // x = y = 10, x = 10, y = 10
-console.log(x, y);
+// let x, y;
+// x = y = 25 - 10 - 5; // x = y = 10, x = 10, y = 10
+// console.log(x, y);
 
-console.log(ageJonas);
-console.log(ageSarah);
+// console.log(ageJonas);
+// console.log(ageSarah);
 
-const averageAge = (ageJonas + ageJonas) / 2;
-console.log(ageJonas, ageSarah, averageAge);
+// const averageAge = (ageJonas + ageJonas) / 2;
+// console.log(ageJonas, ageSarah, averageAge);
+
+const firstName = 'Jonas';
+const job = 'teacher';
+const birthYear = 1991;
+const year = 2037;
+
+// String concatenation
+const jonas =
+  "I'm " + firstName + ', a ' + (year - birthYear) + '-year-old ' + job + '!';
+console.log(jonas);
+
+// Template strings
+const jonasNew = `I'm ${firstName}, a ${year - birthYear}-year-old ${job}!`;
+console.log(jonasNew);
+
+console.log(`Just a regular string...`);
+
+console.log(`String with \n\
+multiple \n\
+lines`);
+
+console.log(`String
+multiple
+lines`);
