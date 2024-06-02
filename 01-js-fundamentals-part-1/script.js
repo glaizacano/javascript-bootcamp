@@ -148,31 +148,52 @@ console.log(now - 1991 > now - 2018); */
 // }
 // console.log(century);
 
-// Type Conversion and Coercion
+// // Type Conversion and Coercion
 
-// Type Conversion
-const inputYear = '1991';
-console.log(Number(inputYear), inputYear); // 1991, '1991'
-console.log(Number(inputYear) + 18); // 2009
+// // Type Conversion
+// const inputYear = '1991';
+// console.log(Number(inputYear), inputYear); // 1991, '1991'
+// console.log(Number(inputYear) + 18); // 2009
 
-console.log(Number('Jonas')); // NaN
-console.log(typeof NaN); // number
+// console.log(Number('Jonas')); // NaN
+// console.log(typeof NaN); // number
 
-console.log(String(23), 23); // '23', 23
+// console.log(String(23), 23); // '23', 23
 
-// Type Coercion
-console.log('I am ' + 23 + ' years old'); // 'I am 23 years old'
-console.log('23' - '10' - 3); // 10
-console.log('23' + '10' + 3); // 23103
-console.log('23' * '2'); // 46
-console.log('23' / '2'); // 11.5
+// // Type Coercion
+// console.log('I am ' + 23 + ' years old'); // 'I am 23 years old'
+// console.log('23' - '10' - 3); // 10
+// console.log('23' + '10' + 3); // 23103
+// console.log('23' * '2'); // 46
+// console.log('23' / '2'); // 11.5
 
-let n = '1' + 1; // concatenates number with string; n = '11'
-n = n - 1; // n = '11' - 1
-console.log(n); // n = 10
+// let n = '1' + 1; // concatenates number with string; n = '11'
+// n = n - 1; // n = '11' - 1
+// console.log(n); // n = 10
 
-let j = 2 + 3 + 4 + '5';
-console.log(j); // j = '95'
+// let j = 2 + 3 + 4 + '5';
+// console.log(j); // j = '95'
 
-let k = '10' - '4' - '3' - 2 + '5';
-console.log(k); // k = '15'
+// let k = '10' - '4' - '3' - 2 + '5';
+// console.log(k); // k = '15'
+
+// Truthy and Falsy Values
+console.log(Boolean(0)); // -> false
+console.log(Boolean(undefined)); //false
+console.log(Boolean('Jonas')); // -> true
+console.log(Boolean({})); // -> true
+console.log(Boolean('')); // -> false
+
+const money = 100;
+if (money) {
+  console.log("Don't spend it all ;)");
+} else {
+  console.log('You should get a job!');
+}
+
+let height = 0;
+if (height) {
+  console.log('YAY! Height is defined');
+} else {
+  console.log('Height is UNDEFINED');
+}
