@@ -178,22 +178,44 @@ console.log(now - 1991 > now - 2018); */
 // console.log(k); // k = '15'
 
 // Truthy and Falsy Values
-console.log(Boolean(0)); // -> false
-console.log(Boolean(undefined)); //false
-console.log(Boolean('Jonas')); // -> true
-console.log(Boolean({})); // -> true
-console.log(Boolean('')); // -> false
+// console.log(Boolean(0)); // -> false
+// console.log(Boolean(undefined)); //false
+// console.log(Boolean('Jonas')); // -> true
+// console.log(Boolean({})); // -> true
+// console.log(Boolean('')); // -> false
 
-const money = 100;
-if (money) {
-  console.log("Don't spend it all ;)");
+// const money = 100;
+// if (money) {
+//   console.log("Don't spend it all ;)");
+// } else {
+//   console.log('You should get a job!');
+// }
+
+// let height = 0;
+// if (height) {
+//   console.log('YAY! Height is defined');
+// } else {
+//   console.log('Height is UNDEFINED');
+// }
+
+// Equality Operators: == vs. ===
+const age = '18';
+if (age === 18) console.log('You just became an adult :D (strict)');
+if (age == 18) console.log('You just became an adult :D (loose)');
+
+const favourite = Number(prompt("What's your favourite number?"));
+console.log(favourite);
+console.log(typeof favourite);
+
+if (favourite === 23) {
+  // '23' == 23
+  console.log('Cool! 23 is an amazing number!');
+} else if (favourite === 7) {
+  console.log('7 is also a cool number');
+} else if (favourite === 9) {
+  console.log('9 is also a cool number');
 } else {
-  console.log('You should get a job!');
+  console.log('Number is not 23 or 7 or 9');
 }
 
-let height = 0;
-if (height) {
-  console.log('YAY! Height is defined');
-} else {
-  console.log('Height is UNDEFINED');
-}
+if (favourite !== 23) console.log('Why not 23?');
